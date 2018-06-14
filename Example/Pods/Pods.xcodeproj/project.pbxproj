@@ -10,7 +10,6 @@
 		03BED94A27E2DBF874FE003818E3D079 /* Pods-ApiumSocialLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5778451712B52ACBD4606278EF23F4B3 /* Pods-ApiumSocialLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		061F21CB3A55F6C7AB4643DC87AFB663 /* Pods-ApiumSocialLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C334EB52AF12DB5B8362D56BC3C089 /* Pods-ApiumSocialLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		279DE91FAEF971E0ADBA97BEF905F57C /* Pods-ApiumSocialLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F11282B7297271C232CB390ECB3353A7 /* Pods-ApiumSocialLogin_Example-dummy.m */; };
-		2C11429D20D2C9620089C6BA /* SocialLoginLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */; };
 		2C11429E20D2C9620089C6BA /* FacebookSocialAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429320D2C9610089C6BA /* FacebookSocialAuthentication.swift */; };
 		2C11429F20D2C9620089C6BA /* FacebookConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429420D2C9610089C6BA /* FacebookConfiguration.swift */; };
 		2C1142A020D2C9620089C6BA /* SocialAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429620D2C9610089C6BA /* SocialAuthenticationManager.swift */; };
@@ -18,7 +17,6 @@
 		2C1142A220D2C9620089C6BA /* UserDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429820D2C9610089C6BA /* UserDataFactory.swift */; };
 		2C1142A320D2C9620089C6BA /* GoogleSocialAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429A20D2C9610089C6BA /* GoogleSocialAuthentication.swift */; };
 		2C1142A420D2C9620089C6BA /* GoogleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429B20D2C9610089C6BA /* GoogleConfiguration.swift */; };
-		2C1142A520D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */; };
 		310BA095527A3CFFD8BA4906A495581E /* ApiumSocialLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DAE93D13DEF9B8C19493229605BB2A /* ApiumSocialLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63881948AA9FF424C8A2F33D605645DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7453E6645642A91CEB440BF181F8A978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -46,7 +44,6 @@
 		24435D1CE819074F2B7E886BCFD95ED2 /* Pods-ApiumSocialLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiumSocialLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
 		24D2B39165CBA8003DC6522C8D0F88EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2555BC86621967B932264925A4CB191B /* Pods-ApiumSocialLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiumSocialLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLoginLibrary.h; sourceTree = "<group>"; };
 		2C11429320D2C9610089C6BA /* FacebookSocialAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSocialAuthentication.swift; sourceTree = "<group>"; };
 		2C11429420D2C9610089C6BA /* FacebookConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConfiguration.swift; sourceTree = "<group>"; };
 		2C11429620D2C9610089C6BA /* SocialAuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthenticationManager.swift; sourceTree = "<group>"; };
@@ -54,7 +51,6 @@
 		2C11429820D2C9610089C6BA /* UserDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataFactory.swift; sourceTree = "<group>"; };
 		2C11429A20D2C9610089C6BA /* GoogleSocialAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSocialAuthentication.swift; sourceTree = "<group>"; };
 		2C11429B20D2C9610089C6BA /* GoogleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleConfiguration.swift; sourceTree = "<group>"; };
-		2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocialLoginLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
 		3399885899C3A2C8E2F5ED788F5EF370 /* Pods-ApiumSocialLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ApiumSocialLogin_Tests.modulemap"; sourceTree = "<group>"; };
 		3A9F02E2E1CBE599AB4A0D5BAADA73F9 /* Pods-ApiumSocialLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiumSocialLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		41F8D4BFCC2BEFDFD811F08D865ABDFD /* ApiumSocialLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ApiumSocialLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -161,6 +157,16 @@
 			path = Google;
 			sourceTree = "<group>";
 		};
+		2C1142B720D2D1F50089C6BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C11429520D2C9610089C6BA /* Common */,
+				2C11429220D2C9610089C6BA /* Facebook */,
+				2C11429920D2C9610089C6BA /* Google */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -256,11 +262,7 @@
 		FF8D4A7A48978CFA9853ACA94CA91982 /* ApiumSocialLogin */ = {
 			isa = PBXGroup;
 			children = (
-				2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */,
-				2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */,
-				2C11429520D2C9610089C6BA /* Common */,
-				2C11429220D2C9610089C6BA /* Facebook */,
-				2C11429920D2C9610089C6BA /* Google */,
+				2C1142B720D2D1F50089C6BA /* Classes */,
 				9A1BC34AC620385C9FAABFF17A925C85 /* Pod */,
 				222906A3BCB27ADB9A56F83F541D84C3 /* Support Files */,
 			);
@@ -292,8 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				310BA095527A3CFFD8BA4906A495581E /* ApiumSocialLogin-umbrella.h in Headers */,
-				2C11429D20D2C9620089C6BA /* SocialLoginLibrary.h in Headers */,
-				2C1142A520D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

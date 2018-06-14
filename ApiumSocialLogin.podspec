@@ -21,21 +21,20 @@ Pod::Spec.new do |s|
     TODO: Add long description of the pod here.
     DESC
     
-    s.homepage         = 'https://github.com/carloscarrera/ApiumSocialLogin'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.homepage         = 'https://github.com/apiumhub/ApiumSocialLogin'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'carloscarrera' => 'carloscarrera.sorribes@gmail.com' }
-    s.source           = { :git => 'https://github.com/carloscarrera/ApiumSocialLogin.git', :tag => s.version.to_s }
-    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.source           = { :git => 'https://github.com/apiumhub/ApiumSocialLogin.git', :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
     
+    s.static_framework = true
+    
     s.source_files = 'ApiumSocialLogin/Classes/**/*'
-
-    s.dependency  'FacebookCore'
-    s.dependency  'FacebookLogin'
-    s.dependency  'FacebookShare'
-    s.dependency 'GoogleSignIn'
+#    s.ios.dependency  'FacebookCore'
+#    s.ios.dependency  'FacebookLogin'
+#    s.ios.dependency  'FacebookShare'
+    s.ios.dependency 'GoogleSignIn'
 
     # s.resource_bundles = {
     #   'ApiumSocialLogin' => ['ApiumSocialLogin/Assets/*.png']
