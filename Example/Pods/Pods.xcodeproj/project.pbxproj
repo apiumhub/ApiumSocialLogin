@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BED94A27E2DBF874FE003818E3D079 /* Pods-ApiumSocialLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5778451712B52ACBD4606278EF23F4B3 /* Pods-ApiumSocialLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		061F21CB3A55F6C7AB4643DC87AFB663 /* Pods-ApiumSocialLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C334EB52AF12DB5B8362D56BC3C089 /* Pods-ApiumSocialLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		279DE91FAEF971E0ADBA97BEF905F57C /* Pods-ApiumSocialLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F11282B7297271C232CB390ECB3353A7 /* Pods-ApiumSocialLogin_Example-dummy.m */; };
+		2C11429D20D2C9620089C6BA /* SocialLoginLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */; };
+		2C11429E20D2C9620089C6BA /* FacebookSocialAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429320D2C9610089C6BA /* FacebookSocialAuthentication.swift */; };
+		2C11429F20D2C9620089C6BA /* FacebookConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429420D2C9610089C6BA /* FacebookConfiguration.swift */; };
+		2C1142A020D2C9620089C6BA /* SocialAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429620D2C9610089C6BA /* SocialAuthenticationManager.swift */; };
+		2C1142A120D2C9620089C6BA /* SocialNetworkfConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429720D2C9610089C6BA /* SocialNetworkfConfigurationFactory.swift */; };
+		2C1142A220D2C9620089C6BA /* UserDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429820D2C9610089C6BA /* UserDataFactory.swift */; };
+		2C1142A320D2C9620089C6BA /* GoogleSocialAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429A20D2C9610089C6BA /* GoogleSocialAuthentication.swift */; };
+		2C1142A420D2C9620089C6BA /* GoogleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C11429B20D2C9610089C6BA /* GoogleConfiguration.swift */; };
+		2C1142A520D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */; };
+		310BA095527A3CFFD8BA4906A495581E /* ApiumSocialLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DAE93D13DEF9B8C19493229605BB2A /* ApiumSocialLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63881948AA9FF424C8A2F33D605645DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7453E6645642A91CEB440BF181F8A978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8280BBF1783455CFBE0ADC0E3A4050F6 /* ApiumSocialLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18D4AAF49BD1CDC2BB411D229BC550 /* ApiumSocialLogin-dummy.m */; };
+		C07AB57C49B99A9B80337175F5581DAD /* Pods-ApiumSocialLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B696C4C81F413169B01A431F5D00F5B /* Pods-ApiumSocialLogin_Tests-dummy.m */; };
+		F9AD34A408254ACB20518F0599FDCA55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C97CB7D96C6203B5FB3BF37D4EA2C8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BFDBAB5852D25B9396AE50AF8C887C;
+			remoteInfo = ApiumSocialLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0007DBB9F412CE76B3223B059BAC2182 /* Pods-ApiumSocialLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiumSocialLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0B696C4C81F413169B01A431F5D00F5B /* Pods-ApiumSocialLogin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApiumSocialLogin_Tests-dummy.m"; sourceTree = "<group>"; };
+		0E3DBB4C27454F786A26BF663E1F67DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F99C8D749F85E93924A6C273A9C46BF /* ApiumSocialLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ApiumSocialLogin.modulemap; sourceTree = "<group>"; };
+		16C334EB52AF12DB5B8362D56BC3C089 /* Pods-ApiumSocialLogin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApiumSocialLogin_Tests-umbrella.h"; sourceTree = "<group>"; };
+		24435D1CE819074F2B7E886BCFD95ED2 /* Pods-ApiumSocialLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiumSocialLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
+		24D2B39165CBA8003DC6522C8D0F88EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2555BC86621967B932264925A4CB191B /* Pods-ApiumSocialLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiumSocialLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLoginLibrary.h; sourceTree = "<group>"; };
+		2C11429320D2C9610089C6BA /* FacebookSocialAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSocialAuthentication.swift; sourceTree = "<group>"; };
+		2C11429420D2C9610089C6BA /* FacebookConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConfiguration.swift; sourceTree = "<group>"; };
+		2C11429620D2C9610089C6BA /* SocialAuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthenticationManager.swift; sourceTree = "<group>"; };
+		2C11429720D2C9610089C6BA /* SocialNetworkfConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworkfConfigurationFactory.swift; sourceTree = "<group>"; };
+		2C11429820D2C9610089C6BA /* UserDataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataFactory.swift; sourceTree = "<group>"; };
+		2C11429A20D2C9610089C6BA /* GoogleSocialAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSocialAuthentication.swift; sourceTree = "<group>"; };
+		2C11429B20D2C9610089C6BA /* GoogleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleConfiguration.swift; sourceTree = "<group>"; };
+		2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocialLoginLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
+		3399885899C3A2C8E2F5ED788F5EF370 /* Pods-ApiumSocialLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ApiumSocialLogin_Tests.modulemap"; sourceTree = "<group>"; };
+		3A9F02E2E1CBE599AB4A0D5BAADA73F9 /* Pods-ApiumSocialLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiumSocialLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		41F8D4BFCC2BEFDFD811F08D865ABDFD /* ApiumSocialLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ApiumSocialLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		44EC7AA449B368B6B6965AC0D9C3D320 /* Pods-ApiumSocialLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiumSocialLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5433782E8BD2361E204B997F04E21AAE /* Pods-ApiumSocialLogin_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiumSocialLogin_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5778451712B52ACBD4606278EF23F4B3 /* Pods-ApiumSocialLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApiumSocialLogin_Example-umbrella.h"; sourceTree = "<group>"; };
+		5C2121354EC178201077CE63B8094A25 /* ApiumSocialLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ApiumSocialLogin-prefix.pch"; sourceTree = "<group>"; };
+		5DFBF56FB4A2E6D4319C0CEB30608D5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DD85D28230179B3D28294D885FE20F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F045CC780DA520B5C6D6292BBDD34A0 /* Pods-ApiumSocialLogin_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiumSocialLogin_Example-resources.sh"; sourceTree = "<group>"; };
+		6F4642B2AF70937EA8964CAD5CFC366E /* Pods-ApiumSocialLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApiumSocialLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F3FEA0AF074E1E37DA107D70F6E4C22 /* Pods-ApiumSocialLogin_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiumSocialLogin_Tests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A959CA49941B4284E86FABB79C15DFFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B5DAE93D13DEF9B8C19493229605BB2A /* ApiumSocialLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ApiumSocialLogin-umbrella.h"; sourceTree = "<group>"; };
+		C8753ABC9B7088B77CA575CD1186D77E /* Pods-ApiumSocialLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiumSocialLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC2777A9EC8FEE5B18AD238537B2DA97 /* Pods-ApiumSocialLogin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ApiumSocialLogin_Example.modulemap"; sourceTree = "<group>"; };
+		D6B8130A337F4A7709853E028EA4EEBD /* ApiumSocialLogin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ApiumSocialLogin.xcconfig; sourceTree = "<group>"; };
+		DE18D4AAF49BD1CDC2BB411D229BC550 /* ApiumSocialLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ApiumSocialLogin-dummy.m"; sourceTree = "<group>"; };
+		E928AE7F553252C41A30F236B3CA3F4D /* Pods_ApiumSocialLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiumSocialLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED548F9A20AF47B1884FFBB2328117A1 /* Pods_ApiumSocialLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiumSocialLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04E6346AF560F3463BEE5EDFD0B0173 /* Pods-ApiumSocialLogin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApiumSocialLogin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F11282B7297271C232CB390ECB3353A7 /* Pods-ApiumSocialLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApiumSocialLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		FC5795D2FC5F09271AF64E9E301A691C /* Pods-ApiumSocialLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiumSocialLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE90116FF4F064417D6A5AD28BF840E7 /* ApiumSocialLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiumSocialLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D45BE390CBFFBFDE144691903221EEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63881948AA9FF424C8A2F33D605645DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6704258134FFB48A3D9C426FFCB844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7453E6645642A91CEB440BF181F8A978 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F771D75693F87BB37DF44ECF22EC5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AD34A408254ACB20518F0599FDCA55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6DA6734A9533D190008221EDE189D4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8D4A7A48978CFA9853ACA94CA91982 /* ApiumSocialLogin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		222906A3BCB27ADB9A56F83F541D84C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F99C8D749F85E93924A6C273A9C46BF /* ApiumSocialLogin.modulemap */,
+				D6B8130A337F4A7709853E028EA4EEBD /* ApiumSocialLogin.xcconfig */,
+				DE18D4AAF49BD1CDC2BB411D229BC550 /* ApiumSocialLogin-dummy.m */,
+				5C2121354EC178201077CE63B8094A25 /* ApiumSocialLogin-prefix.pch */,
+				B5DAE93D13DEF9B8C19493229605BB2A /* ApiumSocialLogin-umbrella.h */,
+				0E3DBB4C27454F786A26BF663E1F67DA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ApiumSocialLogin";
+			sourceTree = "<group>";
+		};
+		2C11429220D2C9610089C6BA /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				2C11429320D2C9610089C6BA /* FacebookSocialAuthentication.swift */,
+				2C11429420D2C9610089C6BA /* FacebookConfiguration.swift */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		2C11429520D2C9610089C6BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C11429620D2C9610089C6BA /* SocialAuthenticationManager.swift */,
+				2C11429720D2C9610089C6BA /* SocialNetworkfConfigurationFactory.swift */,
+				2C11429820D2C9610089C6BA /* UserDataFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C11429920D2C9610089C6BA /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				2C11429A20D2C9610089C6BA /* GoogleSocialAuthentication.swift */,
+				2C11429B20D2C9610089C6BA /* GoogleConfiguration.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0C6DA6734A9533D190008221EDE189D4 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DA30B8620139D322833C758431838401 /* Products */,
+				C2CB19CC05F682C4A4F230F0F45A4E63 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A1BC34AC620385C9FAABFF17A925C85 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				41F8D4BFCC2BEFDFD811F08D865ABDFD /* ApiumSocialLogin.podspec */,
+				A959CA49941B4284E86FABB79C15DFFF /* LICENSE */,
+				65DD85D28230179B3D28294D885FE20F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2CB19CC05F682C4A4F230F0F45A4E63 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D4D16B5B219DA4A294429C6AED6F92 /* Pods-ApiumSocialLogin_Example */,
+				C71A11F93B51BEECFAB427FA97245756 /* Pods-ApiumSocialLogin_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C71A11F93B51BEECFAB427FA97245756 /* Pods-ApiumSocialLogin_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5DFBF56FB4A2E6D4319C0CEB30608D5E /* Info.plist */,
+				3399885899C3A2C8E2F5ED788F5EF370 /* Pods-ApiumSocialLogin_Tests.modulemap */,
+				F04E6346AF560F3463BEE5EDFD0B0173 /* Pods-ApiumSocialLogin_Tests-acknowledgements.markdown */,
+				44EC7AA449B368B6B6965AC0D9C3D320 /* Pods-ApiumSocialLogin_Tests-acknowledgements.plist */,
+				0B696C4C81F413169B01A431F5D00F5B /* Pods-ApiumSocialLogin_Tests-dummy.m */,
+				5433782E8BD2361E204B997F04E21AAE /* Pods-ApiumSocialLogin_Tests-frameworks.sh */,
+				7F3FEA0AF074E1E37DA107D70F6E4C22 /* Pods-ApiumSocialLogin_Tests-resources.sh */,
+				16C334EB52AF12DB5B8362D56BC3C089 /* Pods-ApiumSocialLogin_Tests-umbrella.h */,
+				2555BC86621967B932264925A4CB191B /* Pods-ApiumSocialLogin_Tests.debug.xcconfig */,
+				C8753ABC9B7088B77CA575CD1186D77E /* Pods-ApiumSocialLogin_Tests.release.xcconfig */,
+			);
+			name = "Pods-ApiumSocialLogin_Tests";
+			path = "Target Support Files/Pods-ApiumSocialLogin_Tests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D8D4D16B5B219DA4A294429C6AED6F92 /* Pods-ApiumSocialLogin_Example */ = {
+			isa = PBXGroup;
+			children = (
+				24D2B39165CBA8003DC6522C8D0F88EA /* Info.plist */,
+				CC2777A9EC8FEE5B18AD238537B2DA97 /* Pods-ApiumSocialLogin_Example.modulemap */,
+				6F4642B2AF70937EA8964CAD5CFC366E /* Pods-ApiumSocialLogin_Example-acknowledgements.markdown */,
+				3A9F02E2E1CBE599AB4A0D5BAADA73F9 /* Pods-ApiumSocialLogin_Example-acknowledgements.plist */,
+				F11282B7297271C232CB390ECB3353A7 /* Pods-ApiumSocialLogin_Example-dummy.m */,
+				24435D1CE819074F2B7E886BCFD95ED2 /* Pods-ApiumSocialLogin_Example-frameworks.sh */,
+				6F045CC780DA520B5C6D6292BBDD34A0 /* Pods-ApiumSocialLogin_Example-resources.sh */,
+				5778451712B52ACBD4606278EF23F4B3 /* Pods-ApiumSocialLogin_Example-umbrella.h */,
+				0007DBB9F412CE76B3223B059BAC2182 /* Pods-ApiumSocialLogin_Example.debug.xcconfig */,
+				FC5795D2FC5F09271AF64E9E301A691C /* Pods-ApiumSocialLogin_Example.release.xcconfig */,
+			);
+			name = "Pods-ApiumSocialLogin_Example";
+			path = "Target Support Files/Pods-ApiumSocialLogin_Example";
+			sourceTree = "<group>";
+		};
+		DA30B8620139D322833C758431838401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE90116FF4F064417D6A5AD28BF840E7 /* ApiumSocialLogin.framework */,
+				E928AE7F553252C41A30F236B3CA3F4D /* Pods_ApiumSocialLogin_Example.framework */,
+				ED548F9A20AF47B1884FFBB2328117A1 /* Pods_ApiumSocialLogin_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8D4A7A48978CFA9853ACA94CA91982 /* ApiumSocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				2C11429C20D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h */,
+				2C11429120D2C9610089C6BA /* SocialLoginLibrary.h */,
+				2C11429520D2C9610089C6BA /* Common */,
+				2C11429220D2C9610089C6BA /* Facebook */,
+				2C11429920D2C9610089C6BA /* Google */,
+				9A1BC34AC620385C9FAABFF17A925C85 /* Pod */,
+				222906A3BCB27ADB9A56F83F541D84C3 /* Support Files */,
+			);
+			name = ApiumSocialLogin;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		355FA07668F75E4FEB05D7C85DE28DDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061F21CB3A55F6C7AB4643DC87AFB663 /* Pods-ApiumSocialLogin_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F8A70784F7236350E4007FA3FD17D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BED94A27E2DBF874FE003818E3D079 /* Pods-ApiumSocialLogin_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB13D6C97548DE095EC19FC3014BCB98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310BA095527A3CFFD8BA4906A495581E /* ApiumSocialLogin-umbrella.h in Headers */,
+				2C11429D20D2C9620089C6BA /* SocialLoginLibrary.h in Headers */,
+				2C1142A520D2C9620089C6BA /* SocialLoginLibrary-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07DEC999A1B48BEC1D7CB7777393DE0C /* Pods-ApiumSocialLogin_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C0FB51EE4C9DA73DBF7BA01CD0AD12 /* Build configuration list for PBXNativeTarget "Pods-ApiumSocialLogin_Example" */;
+			buildPhases = (
+				51147546ED1D066986E3F2F212AAFA54 /* Sources */,
+				DA6704258134FFB48A3D9C426FFCB844 /* Frameworks */,
+				D4F8A70784F7236350E4007FA3FD17D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A0ED064DFE3E93B9A2FCDFF9532457 /* PBXTargetDependency */,
+			);
+			name = "Pods-ApiumSocialLogin_Example";
+			productName = "Pods-ApiumSocialLogin_Example";
+			productReference = E928AE7F553252C41A30F236B3CA3F4D /* Pods_ApiumSocialLogin_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38BFDBAB5852D25B9396AE50AF8C887C /* ApiumSocialLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C15AF4A18D3F52E1BCF1FB4FBB27C72 /* Build configuration list for PBXNativeTarget "ApiumSocialLogin" */;
+			buildPhases = (
+				749889F3E78CD593AC137CB075DB660F /* Sources */,
+				D45BE390CBFFBFDE144691903221EEBF /* Frameworks */,
+				DB13D6C97548DE095EC19FC3014BCB98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApiumSocialLogin;
+			productName = ApiumSocialLogin;
+			productReference = FE90116FF4F064417D6A5AD28BF840E7 /* ApiumSocialLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		727F466D1773FCC191F1B0AA142603B1 /* Pods-ApiumSocialLogin_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1604B798DB14C07E84A4D2A5217C73 /* Build configuration list for PBXNativeTarget "Pods-ApiumSocialLogin_Tests" */;
+			buildPhases = (
+				1D2B71BB191673259B1470038D6067EC /* Sources */,
+				E5F771D75693F87BB37DF44ECF22EC5F /* Frameworks */,
+				355FA07668F75E4FEB05D7C85DE28DDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ApiumSocialLogin_Tests";
+			productName = "Pods-ApiumSocialLogin_Tests";
+			productReference = ED548F9A20AF47B1884FFBB2328117A1 /* Pods_ApiumSocialLogin_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DA30B8620139D322833C758431838401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38BFDBAB5852D25B9396AE50AF8C887C /* ApiumSocialLogin */,
+				07DEC999A1B48BEC1D7CB7777393DE0C /* Pods-ApiumSocialLogin_Example */,
+				727F466D1773FCC191F1B0AA142603B1 /* Pods-ApiumSocialLogin_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D2B71BB191673259B1470038D6067EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07AB57C49B99A9B80337175F5581DAD /* Pods-ApiumSocialLogin_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51147546ED1D066986E3F2F212AAFA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279DE91FAEF971E0ADBA97BEF905F57C /* Pods-ApiumSocialLogin_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749889F3E78CD593AC137CB075DB660F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1142A020D2C9620089C6BA /* SocialAuthenticationManager.swift in Sources */,
+				2C11429F20D2C9620089C6BA /* FacebookConfiguration.swift in Sources */,
+				2C1142A220D2C9620089C6BA /* UserDataFactory.swift in Sources */,
+				2C11429E20D2C9620089C6BA /* FacebookSocialAuthentication.swift in Sources */,
+				8280BBF1783455CFBE0ADC0E3A4050F6 /* ApiumSocialLogin-dummy.m in Sources */,
+				2C1142A420D2C9620089C6BA /* GoogleConfiguration.swift in Sources */,
+				2C1142A120D2C9620089C6BA /* SocialNetworkfConfigurationFactory.swift in Sources */,
+				2C1142A320D2C9620089C6BA /* GoogleSocialAuthentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4A0ED064DFE3E93B9A2FCDFF9532457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApiumSocialLogin;
+			target = 38BFDBAB5852D25B9396AE50AF8C887C /* ApiumSocialLogin */;
+			targetProxy = 3C97CB7D96C6203B5FB3BF37D4EA2C8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FB30890F02EC260BAFAA6C39241A8B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B8130A337F4A7709853E028EA4EEBD /* ApiumSocialLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ApiumSocialLogin/ApiumSocialLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ApiumSocialLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ApiumSocialLogin/ApiumSocialLogin.modulemap";
+				PRODUCT_NAME = ApiumSocialLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		77949F68FECB79D8F64B779116F29388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B8130A337F4A7709853E028EA4EEBD /* ApiumSocialLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ApiumSocialLogin/ApiumSocialLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ApiumSocialLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ApiumSocialLogin/ApiumSocialLogin.modulemap";
+				PRODUCT_NAME = ApiumSocialLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF4A5BA4064CB4334FAFE50D5087DDF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8753ABC9B7088B77CA575CD1186D77E /* Pods-ApiumSocialLogin_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiumSocialLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApiumSocialLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E932562A92A9D6FC712E8F18F144DEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2555BC86621967B932264925A4CB191B /* Pods-ApiumSocialLogin_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiumSocialLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApiumSocialLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9458C8F95A52350CA4202BE34CE3BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5795D2FC5F09271AF64E9E301A691C /* Pods-ApiumSocialLogin_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiumSocialLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApiumSocialLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F06B7DCC26F8D5D8710EF74A0BEF374A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0007DBB9F412CE76B3223B059BAC2182 /* Pods-ApiumSocialLogin_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiumSocialLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApiumSocialLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C0FB51EE4C9DA73DBF7BA01CD0AD12 /* Build configuration list for PBXNativeTarget "Pods-ApiumSocialLogin_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B7DCC26F8D5D8710EF74A0BEF374A /* Debug */,
+				E9458C8F95A52350CA4202BE34CE3BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C15AF4A18D3F52E1BCF1FB4FBB27C72 /* Build configuration list for PBXNativeTarget "ApiumSocialLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77949F68FECB79D8F64B779116F29388 /* Debug */,
+				2FB30890F02EC260BAFAA6C39241A8B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1604B798DB14C07E84A4D2A5217C73 /* Build configuration list for PBXNativeTarget "Pods-ApiumSocialLogin_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E932562A92A9D6FC712E8F18F144DEF9 /* Debug */,
+				AF4A5BA4064CB4334FAFE50D5087DDF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

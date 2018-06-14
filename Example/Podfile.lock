@@ -1,0 +1,16 @@
+PODS:
+  - ApiumSocialLogin (0.1.0)
+
+DEPENDENCIES:
+  - ApiumSocialLogin (from `../`)
+
+EXTERNAL SOURCES:
+  ApiumSocialLogin:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ApiumSocialLogin: 4e894cf87f8e170ee0946f5cfe3d638dfe2a906e
+
+PODFILE CHECKSUM: 335318a397f7d02b5b5846ee317b0f44bd1e4deb
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module Pods_ApiumSocialLogin_Example {
+  umbrella header "Pods-ApiumSocialLogin_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
