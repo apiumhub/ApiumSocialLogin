@@ -190,8 +190,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				F720C84FFCFD25CB2F82501A /* [CP] Embed Pods Frameworks */,
-				9D00A0546533938A63A75C2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,21 +334,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D00A0546533938A63A75C2A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DDAD22F02180FEAEFBD2B2DB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,21 +350,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F720C84FFCFD25CB2F82501A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
