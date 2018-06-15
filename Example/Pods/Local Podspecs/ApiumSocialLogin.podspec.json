@@ -12,7 +12,7 @@
     "carloscarrera": "carloscarrera.sorribes@gmail.com"
   },
   "source": {
-    "git": "https://github.com/apiumhub/ApiumSocialLogin.git",
+    "git": "git@github.com:apiumhub/ApiumSocialLogin.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -21,16 +21,10 @@
   "static_framework": true,
   "source_files": "Classes/**/*.{h,m,swift}",
   "dependencies": {
-    "Bolts": [
-
-    ],
     "FacebookCore": [
 
     ],
     "FacebookLogin": [
-
-    ],
-    "FacebookShare": [
 
     ],
     "GoogleSignIn": [
