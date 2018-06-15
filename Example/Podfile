@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ApiumSocialLogin_Example' do
-    pod 'ApiumSocialLogin', :path => '../'
+    pod 'ApiumSocialLogin', :path => '../ApiumSocialLogin.podspec'
     
     target 'ApiumSocialLogin_Tests' do
         inherit! :search_paths

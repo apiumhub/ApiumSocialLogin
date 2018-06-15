@@ -7,6 +7,8 @@
 //  Copyright © 2018 apiumhub. All rights reserved.
 //
 
+import UIKit
+
 public protocol SocialAuthenticationProtocol {
     weak var viewController: UIViewController? { get set }
     func login(configuration: SocialNetworkConfiguration)

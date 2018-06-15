@@ -1,5 +1,6 @@
 PODS:
   - ApiumSocialLogin (0.1.0):
+    - Bolts
     - FacebookCore
     - FacebookLogin
     - FacebookShare
@@ -51,14 +52,14 @@ PODS:
     - GTMSessionFetcher/Core (= 1.1.15)
 
 DEPENDENCIES:
-  - ApiumSocialLogin (from `../`)
+  - ApiumSocialLogin (from `../ApiumSocialLogin.podspec`)
 
 EXTERNAL SOURCES:
   ApiumSocialLogin:
-    :path: ../
+    :path: ../ApiumSocialLogin.podspec
 
 SPEC CHECKSUMS:
-  ApiumSocialLogin: 14758d405653f448a477349229bea86e851187ec
+  ApiumSocialLogin: 0a9e9a6be875d447f058f4401d129c5160cd3282
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
   FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
@@ -71,6 +72,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
 
-PODFILE CHECKSUM: f5d22788c41c0fb86d4c3ba96f908b74b8739f42
+PODFILE CHECKSUM: c0316d32748d3523b6085e2ac184fbd43d678bcf
 
 COCOAPODS: 1.4.0

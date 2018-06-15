@@ -18,19 +18,25 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ApiumSocialLogin/*.{h,swift}",
-  "dependencies": {
-    "FacebookCore": [
+  "static_framework": true,
+  "source_files": "Classes/**/*.{h,m,swift}",
+  "ios": {
+    "dependencies": {
+      "Bolts": [
 
-    ],
-    "FacebookLogin": [
+      ],
+      "FacebookCore": [
 
-    ],
-    "FacebookShare": [
+      ],
+      "FacebookLogin": [
 
-    ],
-    "GoogleSignIn": [
+      ],
+      "FacebookShare": [
 
-    ]
+      ],
+      "GoogleSignIn": [
+
+      ]
+    }
   }
 }
