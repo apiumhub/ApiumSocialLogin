@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C79530120DD0DBB000C495C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C79530020DD0DBB000C495C /* GoogleService-Info.plist */; };
 		563D905D4B2F22D756F0E2F4 /* Pods_ApiumSocialLogin_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D101EF0103263D3CC55AFCE4 /* Pods_ApiumSocialLogin_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		1AA386A89DE3C407833381C7 /* Pods-ApiumSocialLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiumSocialLogin_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1BE0553B515951C646B63BDD /* Pods-ApiumSocialLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiumSocialLogin_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiumSocialLogin_Example/Pods-ApiumSocialLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2C79530020DD0DBB000C495C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32271CA049BB314ABAAC98B9 /* Pods-ApiumSocialLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiumSocialLogin_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		32D1183284540E29F1131478 /* Pods-ApiumSocialLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiumSocialLogin_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiumSocialLogin_Tests/Pods-ApiumSocialLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C647A57180D2E30A53DEAB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C79530020DD0DBB000C495C /* GoogleService-Info.plist */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				2C79530120DD0DBB000C495C /* GoogleService-Info.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

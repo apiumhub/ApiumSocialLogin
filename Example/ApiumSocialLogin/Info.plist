@@ -55,5 +55,24 @@
         <string>fbauth2</string>
         <string>fbshareextension</string>
     </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>org.cocoapods.demo.ApiumSocialLogin-Example</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.826010857207-umojfjg119qa12b9329t4u4ns5vsis80</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

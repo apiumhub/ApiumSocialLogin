@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
     // MARK: Google Login
     let kGoogleReadPermissions = ["https://www.googleapis.com/auth/plus.me", "https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"]
-    let kGoogleClientId = "994582783322-89qvsb0rjv3ht3mcur3qiqjcidd8679k.apps.googleusercontent.com"
+    let kGoogleClientId = "826010857207-umojfjg119qa12b9329t4u4ns5vsis80.apps.googleusercontent.com"
     
     var googleSocialAuthentication: SocialAuthenticationProtocol?
 
