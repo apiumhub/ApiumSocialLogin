@@ -11,16 +11,43 @@ import ApiumSocialLogin
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // MARK: Facebook Login
+    var facebookSocialAuthentication: SocialAuthenticationProtocol?
+    let kFBReadPermissions = ["public_profile", "email", "user_friends"]
+    
+    @IBAction func facebookButtonPressed(_ sender: Any) {
+        let fbConfig = SocialNetworkfConfigurationFactory.createFacebookConfiguration(readPermissions: kFBReadPermissions)
         
+        self.facebookSocialAuthentication = FacebookSocialAuthentication(vc: self)
+        self.facebookSocialAuthentication?.login(configuration: fbConfig)
+        
+        self.facebookSocialAuthentication?.isLoginSuccess = { (userData) in
+            print(userData)
+        }
+        self.facebookSocialAuthentication?.isLoginFailure = { (error) in
+            print(error)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // MARK: Google Login
+    let kGoogleReadPermissions = ["https://www.googleapis.com/auth/plus.me", "https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"]
+    let kGoogleClientId = "994582783322-89qvsb0rjv3ht3mcur3qiqjcidd8679k.apps.googleusercontent.com"
+    
+    var googleSocialAuthentication: SocialAuthenticationProtocol?
 
+    @IBAction func googleButtonPressed(_ sender: Any) {
+        let googleConfig = SocialNetworkfConfigurationFactory.createGoogleConfiguration(clientId: self.kGoogleClientId, scopes: self.kGoogleReadPermissions)
+        
+        self.googleSocialAuthentication = GoogleSocialAuthentication(vc: self)
+        self.googleSocialAuthentication?.login(configuration: googleConfig)
+        
+        self.googleSocialAuthentication?.isLoginSuccess = { (userData) in
+            print(userData)
+        }
+        self.googleSocialAuthentication?.isLoginFailure = { (error) in
+            print(error)
+        }
+    }
+    
 }
 
