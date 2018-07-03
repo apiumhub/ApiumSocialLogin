@@ -7,13 +7,16 @@
 //
 
 import Foundation
-import FBSDKLoginKit
+import FacebookLogin
+import FacebookCore
 
 @objcMembers public class FacebookSocialAuthentication: NSObject, SocialAuthenticationProtocol {
     
     public weak var viewController: UIViewController?
     public var isLoginSuccess: ((UserAuthenticationResponseData) -> Void)?
     public var isLoginFailure: ((SocialAuthenticationError) -> Void)?
+    
+    let loginManager = LoginManager()
     
     public init(vc: UIViewController) {
         self.viewController = vc
@@ -25,61 +28,62 @@ import FBSDKLoginKit
             self.isLoginFailure?(.failed)
             return
         }
-        FBSDKSettings.setAutoLogAppEventsEnabled(0)
-        // TEST ERROR
-        let fbManager = FBSDKLoginManager()
-        fbManager.loginBehavior = .native
-        fbManager.logIn(withReadPermissions: config.readPermissions, from: self.viewController)  {
-            (result, error) in
+                
+        loginManager.loginBehavior = .native
+        loginManager.logIn(readPermissions: config.readPermissions, viewController: self.viewController) { (loginResult) in
             
-            guard error == nil else {
+            switch loginResult {
+            case .success(let accessToken):
+                self.getUserDataFromGraph(parameters: ["fields": "email"], token:accessToken.token , completion: { (data) in
+                    if let dt = data, let email = dt["email"] as? String, let id = dt["id"] as? String {
+                        let userData = UserDataFactory.makeFacebookUserData(userId:id,
+                                                                            token: accessToken.token.authenticationToken,
+                                                                            email: email)
+                        self.isLoginSuccess?(userData)
+                    } else {
+                        self.isLoginFailure?(.noEmail)
+                    }
+                })
+                
+            case .cancelled:
+                self.isLoginFailure?(.canceled)
+                return
+                
+            case .failed:
                 self.isLoginFailure?(.failed)
                 return
             }
-            guard result?.isCancelled == false else {
-                self.isLoginFailure?(.canceled)
-                return
-            }
-            // Check email
-            self.getUserDataFromGraph(parameters: ["fields": "email"], completion: { (data) in
-                if let dt = data, let email = dt["email"] as? String {
-                    let userData = UserDataFactory.makeFacebookUserData(userId: FBSDKAccessToken.current().userID,
-                                                                        token: FBSDKAccessToken.current().tokenString,
-                                                                        email: email)
-                    self.isLoginSuccess?(userData)
-                } else {
-                  self.isLoginFailure?(.noEmail)
-                }
-            })
         }
     }
     
-    private func getUserDataFromGraph(parameters: [String: String], completion: @escaping ([String : AnyObject]?) -> ())  {
+    private func getUserDataFromGraph(parameters: [String: String],token: AccessToken , completion: @escaping ([String : AnyObject]?) -> ())  {
         
-        FBSDKGraphRequest(graphPath: "me", parameters: parameters).start {
-            (connection, result, error) in
-            if error == nil, let data = result as? [String : AnyObject] {
-                completion(data)
-            } else {
-                completion(nil)
+        GraphRequest(graphPath: "me", parameters: parameters, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion).start { (urlResponse, requestResult) in
+            
+            switch requestResult {
+            case .failed:
+                self.isLoginFailure?(.failed)
+                break
+                
+            case .success(let graphResponse):
+                if let responseDictionary = graphResponse.dictionaryValue {
+                    completion(responseDictionary as [String : AnyObject])
+                }
             }
         }
     }
 
     public func logout() {
-        let fbManager = FBSDKLoginManager()
-        fbManager.loginBehavior = .native
-        fbManager.logOut()
+        loginManager.logOut()
     }
 
-    @discardableResult
+    
     public static func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        return SDKApplicationDelegate.shared.application(application, open: url)
     }
     
-    @discardableResult
     public static func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool  {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        return SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
 }

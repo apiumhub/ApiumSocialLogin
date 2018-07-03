@@ -10,7 +10,7 @@
 import UIKit
 
 public protocol SocialAuthenticationProtocol {
-    weak var viewController: UIViewController? { get set }
+    var viewController: UIViewController? { get set }
     func login(configuration: SocialNetworkConfiguration)
     func logout() -> Void
     var isLoginSuccess: ((_ userData: UserAuthenticationResponseData) -> Void)? { get set }

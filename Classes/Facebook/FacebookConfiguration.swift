@@ -7,13 +7,12 @@
 //
 
 import Foundation
-
+import FacebookCore
 public class FacebookConfiguration: NSObject, SocialNetworkConfiguration {
     
-    internal let readPermissions: [String]
+    internal var readPermissions: [ReadPermission] = []
     
     public init(readPermissions: [String]) {
-        self.readPermissions = readPermissions
+        self.readPermissions = readPermissions.map{ReadPermission.custom($0)}
     }
-    
 }

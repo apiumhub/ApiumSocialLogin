@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ApiumSocialLogin'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = 'ApiumSocialLogin is a helper api to authenticate users using Social Networks like Facebook and Google.'
     s.description      = <<-DESC
-    ApiumSocialLogin (0.1.0) is a helper api to authenticate users using Social Networks like Facebook and Google.
+    ApiumSocialLogin (s.version) is a helper api to authenticate users using Social Networks like Facebook and Google.
     DESC
     
     s.homepage         = 'https://github.com/apiumhub/ApiumSocialLogin'
@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.static_framework = true
     s.source_files = 'Classes/**/*.{h,m,swift}'
-    s.dependency  'FacebookCore'
     s.dependency  'FacebookLogin'
     s.dependency  'GoogleSignIn'
 end

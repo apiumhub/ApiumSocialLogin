@@ -21,9 +21,6 @@
   "static_framework": true,
   "source_files": "Classes/**/*.{h,m,swift}",
   "dependencies": {
-    "FacebookCore": [
-
-    ],
     "FacebookLogin": [
 
     ],
