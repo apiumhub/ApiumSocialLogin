@@ -10,25 +10,16 @@ import Foundation
 import FacebookLogin
 import FacebookCore
 
-@objcMembers public class FacebookSocialAuthentication: NSObject, SocialAuthenticationProtocol {
-    
-    public weak var viewController: UIViewController?
-    public var isLoginSuccess: ((UserAuthenticationResponseData) -> Void)?
-    public var isLoginFailure: ((SocialAuthenticationError) -> Void)?
+@objcMembers public class FacebookSocialAuthentication: BaseAuthentication, SocialAuthenticationProtocol {
     
     let loginManager = LoginManager()
-    
-    public init(vc: UIViewController) {
-        self.viewController = vc
-    }
     
     public func login(configuration: SocialNetworkConfiguration) {
         
         guard let config = configuration as? FacebookConfiguration else {
-            self.isLoginFailure?(.failed)
-            return
+            fatalError("missing configuration")
         }
-                
+        
         loginManager.loginBehavior = .native
         loginManager.logIn(readPermissions: config.readPermissions, viewController: self.viewController) { (loginResult) in
             
@@ -39,18 +30,18 @@ import FacebookCore
                         let userData = UserDataFactory.makeFacebookUserData(userId:id,
                                                                             token: accessToken.token.authenticationToken,
                                                                             email: email)
-                        self.isLoginSuccess?(userData)
+                        self.onSuccess(userData)
                     } else {
-                        self.isLoginFailure?(.noEmail)
+                        self.onError(.noEmail)
                     }
                 })
                 
             case .cancelled:
-                self.isLoginFailure?(.canceled)
+                self.onError(.canceled)
                 return
                 
             case .failed:
-                self.isLoginFailure?(.failed)
+                self.onError(.failed)
                 return
             }
         }
@@ -62,7 +53,7 @@ import FacebookCore
             
             switch requestResult {
             case .failed:
-                self.isLoginFailure?(.failed)
+                self.onError(.failed)
                 break
                 
             case .success(let graphResponse):
@@ -72,11 +63,11 @@ import FacebookCore
             }
         }
     }
-
+    
     public func logout() {
         loginManager.logOut()
     }
-
+    
     
     public static func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool {
         return SDKApplicationDelegate.shared.application(application, open: url)
@@ -85,5 +76,5 @@ import FacebookCore
     public static func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool  {
         return SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
-
+    
 }

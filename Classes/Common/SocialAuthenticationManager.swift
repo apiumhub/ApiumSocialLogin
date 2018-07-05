@@ -13,8 +13,6 @@ public protocol SocialAuthenticationProtocol {
     var viewController: UIViewController? { get set }
     func login(configuration: SocialNetworkConfiguration)
     func logout() -> Void
-    var isLoginSuccess: ((_ userData: UserAuthenticationResponseData) -> Void)? { get set }
-    var isLoginFailure: ((_ error: SocialAuthenticationError) -> Void)? { get set }
 }
 
 public struct UserAuthenticationResponseData {

@@ -9,22 +9,12 @@
 import Foundation
 import GoogleSignIn
 
-public class GoogleSocialAuthentication: NSObject, SocialAuthenticationProtocol {
+public class GoogleSocialAuthentication: BaseAuthentication, SocialAuthenticationProtocol {
     
-    public weak var viewController: UIViewController?
-    public var isLoginSuccess: ((UserAuthenticationResponseData) -> Void)?
-    public var isLoginFailure: ((SocialAuthenticationError) -> Void)?
-    
-    
-    public init(vc: UIViewController) {
-        self.viewController = vc
-    }
-
-    public func login(configuration: SocialNetworkConfiguration) {
+    public func login(configuration: SocialNetworkConfiguration)  {
         
         guard let config = configuration as? GoogleConfiguration else {
-            self.isLoginFailure?(.failed)
-            return
+            fatalError("missing configuration")
         }
         
         if let scopes = config.scopes  {
@@ -56,20 +46,20 @@ extension GoogleSocialAuthentication: GIDSignInUIDelegate, GIDSignInDelegate {
             if nsError.domain == kGIDSignInErrorDomain {
                 switch nsError.code {
                 case GIDSignInErrorCode.canceled.rawValue:
-                    self.isLoginFailure?(.canceled)
+                    self.onError(.canceled)
                 default:
-                    self.isLoginFailure?(.failed)
+                    self.onError(.failed)
                 }
             }
         } else {
             guard let currentUser = GIDSignIn.sharedInstance().currentUser,
                 let userID = currentUser.userID,
                 let token = currentUser.authentication.accessToken else {
-                    self.isLoginFailure?(.failed)
+                    self.onError(.failed)
                     return
             }
             
-            self.isLoginSuccess?(UserAuthenticationResponseData(userId: userID, token: token, email: currentUser.profile.email))
+            self.onSuccess(UserAuthenticationResponseData(userId: userID, token: token, email: currentUser.profile.email))
         }
     }
     
