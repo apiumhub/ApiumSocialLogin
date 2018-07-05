@@ -8,6 +8,7 @@
 
 import Foundation
 import FacebookCore
+
 public class FacebookConfiguration: NSObject, SocialNetworkConfiguration {
     
     internal var readPermissions: [ReadPermission] = []
