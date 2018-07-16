@@ -53,3 +53,14 @@ enum LoginResult {
     case success
     case failure(error: SocialAuthenticationError)
 }
+
+public enum Permissions {
+    case basic
+    
+    func toFacebookPermission() -> [String] {
+        switch self {
+        case .basic: return ["public_profile", "email"]
+        }
+        
+    }
+}

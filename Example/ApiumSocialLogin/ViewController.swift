@@ -12,11 +12,10 @@ import ApiumSocialLogin
 class ViewController: UIViewController {
     
     // MARK: Facebook Login
-    let kFBReadPermissions = ["public_profile", "email", "user_friends"]
     var facebookSocialAuthentication: FacebookSocialAuthentication!
     
     @IBAction func facebookButtonPressed(_ sender: Any) {
-        let fbConfig = SocialNetworkfConfigurationFactory.createFacebookConfiguration(readPermissions: kFBReadPermissions)
+        let fbConfig = SocialNetworkfConfigurationFactory.createFacebookConfiguration()
         
         let successClosure = { (userData) in
             print(userData)

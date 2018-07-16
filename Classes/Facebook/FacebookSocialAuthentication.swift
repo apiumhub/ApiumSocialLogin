@@ -21,7 +21,12 @@ import FacebookCore
         }
         
         loginManager.loginBehavior = .native
-        loginManager.logIn(readPermissions: config.readPermissions, viewController: self.viewController) { (loginResult) in
+        
+        let permissions = config.readPermissions.map { hello in
+            return ReadPermission.custom(hello)
+        }
+        
+        loginManager.logIn(readPermissions: permissions, viewController: self.viewController) { (loginResult) in
             
             switch loginResult {
             case .success(let accessToken):

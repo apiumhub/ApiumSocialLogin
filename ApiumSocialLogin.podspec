@@ -24,4 +24,6 @@ Pod::Spec.new do |s|
     s.source_files = 'Classes/**/*.{h,m,swift}'
     s.dependency  'FacebookLogin'
     s.dependency  'GoogleSignIn'
+    
+
 end

@@ -9,11 +9,11 @@
 import Foundation
 import FacebookCore
 
-public class FacebookConfiguration: NSObject, SocialNetworkConfiguration {
+public class FacebookConfiguration: SocialNetworkConfiguration {
     
-    internal var readPermissions: [ReadPermission] = []
+    internal var readPermissions: Set<String>
     
-    public init(readPermissions: [String]) {
-        self.readPermissions = readPermissions.map{ReadPermission.custom($0)}
+    init(readPermissions: Set<String>) {
+        self.readPermissions = readPermissions
     }
 }
