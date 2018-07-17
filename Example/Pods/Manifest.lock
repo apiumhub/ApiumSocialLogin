@@ -61,7 +61,7 @@ EXTERNAL SOURCES:
     :path: "../ApiumSocialLogin.podspec"
 
 SPEC CHECKSUMS:
-  ApiumSocialLogin: 25004938eb9ccd810f2d5b323c8b06d91c14575c
+  ApiumSocialLogin: 2c9e82f7b79cdfabbfbc4aa208c64e11a0a08862
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FacebookCore: 33078ef1d7d76b73f7e8c990dca7d3ea6db8d22f
   FacebookLogin: 6f15bf4fefd7a8865abbfa8fcd7f3dfd87aa275f

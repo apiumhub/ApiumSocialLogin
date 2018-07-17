@@ -1,6 +1,0 @@
-framework module ApiumSocialLogin {
-  umbrella header "ApiumSocialLogin-umbrella.h"
-
-  export *
-  module * { export * }
-}
