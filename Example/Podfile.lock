@@ -1,7 +1,9 @@
 PODS:
   - ApiumSocialLogin (0.1.1):
+    - ApiumWechatKit
     - FacebookLogin
     - GoogleSignIn
+  - ApiumWechatKit (0.1.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -20,6 +22,55 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.34.0):
     - FBSDKCoreKit
+  - Firebase/Core (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.0.1)
+  - Firebase/CoreOnly (5.4.0):
+    - FirebaseCore (= 5.0.5)
+  - Firebase/MLVision (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (= 0.10.0)
+  - Firebase/MLVisionBarcodeModel (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionBarcodeModel (= 0.10.0)
+  - Firebase/MLVisionTextModel (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionTextModel (= 0.10.0)
+  - FirebaseAnalytics (5.0.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.0.5):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (3.1.1):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMLCommon (0.10.0):
+    - FirebaseCore (~> 5.0)
+  - FirebaseMLVision (0.10.0):
+    - FirebaseCore (~> 5.0)
+    - FirebaseMLCommon (~> 0.10)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleMobileVision/Detector (~> 1.3)
+  - FirebaseMLVisionBarcodeModel (0.10.0):
+    - GoogleMobileVision/BarcodeDetector (~> 1.3)
+  - FirebaseMLVisionTextModel (0.10.0):
+    - GoogleMobileVision/TextDetector (~> 1.3)
+  - GoogleAPIClientForREST/Core (1.3.4):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.3.4):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleMobileVision/BarcodeDetector (1.3.2):
+    - GoogleMobileVision/Detector (~> 1.3)
+  - GoogleMobileVision/Detector (1.3.2):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.1)
+  - GoogleMobileVision/TextDetector (1.3.2):
+    - GoogleMobileVision/Detector (~> 1.3)
   - GoogleSignIn (4.1.2):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -28,6 +79,10 @@ PODS:
   - GoogleToolboxForMac/DebugUtils (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
   - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
     - GoogleToolboxForMac/DebugUtils (= 2.1.4)
     - GoogleToolboxForMac/Defines (= 2.1.4)
@@ -40,38 +95,75 @@ PODS:
   - GTMSessionFetcher/Core (1.1.15)
   - GTMSessionFetcher/Full (1.1.15):
     - GTMSessionFetcher/Core (= 1.1.15)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.6.0)
 
 DEPENDENCIES:
   - ApiumSocialLogin (from `../ApiumSocialLogin.podspec`)
+  - Firebase/Core
+  - Firebase/MLVision
+  - Firebase/MLVisionBarcodeModel
+  - Firebase/MLVisionTextModel
 
 SPEC REPOS:
+  "git@github.com:apiumhub/Apium-PodSpecs.git":
+    - ApiumWechatKit
   https://github.com/cocoapods/specs.git:
     - Bolts
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMLCommon
+    - FirebaseMLVision
+    - FirebaseMLVisionBarcodeModel
+    - FirebaseMLVisionTextModel
+    - GoogleAPIClientForREST
+    - GoogleMobileVision
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - nanopb
+    - Protobuf
 
 EXTERNAL SOURCES:
   ApiumSocialLogin:
     :path: "../ApiumSocialLogin.podspec"
 
 SPEC CHECKSUMS:
-  ApiumSocialLogin: 2c9e82f7b79cdfabbfbc4aa208c64e11a0a08862
+  ApiumSocialLogin: 74f8f993d675326c21d9ed86d8ccf8ab30392b0b
+  ApiumWechatKit: e6b0783c2c4d28ffb12dfd057993e5b2d069a5f0
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FacebookCore: 33078ef1d7d76b73f7e8c990dca7d3ea6db8d22f
   FacebookLogin: 6f15bf4fefd7a8865abbfa8fcd7f3dfd87aa275f
   FBSDKCoreKit: 0ff57f093b85c8c9d5aba697d3edf68a8960ce78
   FBSDKLoginKit: 8c78f57a145afb756e4755e69195ebe08a42466e
+  Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
+  FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
+  FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
+  FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
+  FirebaseMLCommon: 88ffed2dbb54ecb7dbcf8080a7654b6ea938e15b
+  FirebaseMLVision: 144a482992b5b3d60afc17abfeb28a42bf468522
+  FirebaseMLVisionBarcodeModel: dfbe6e789d6cedbe77bcf5b8b7eb1f8304e854ff
+  FirebaseMLVisionTextModel: 4155450cea9f7fdca1d294c6b86e6ea67e665643
+  GoogleAPIClientForREST: f7951c455df271bc6259b3ddb4073d0026475ccf
+  GoogleMobileVision: 6b0a3a2dae1974ec35d80fdeeacc3a03193642e0
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
 
-PODFILE CHECKSUM: c0316d32748d3523b6085e2ac184fbd43d678bcf
+PODFILE CHECKSUM: 5803bd0f60a68629306a61e6bf97b234a9e54d91
 
 COCOAPODS: 1.5.3

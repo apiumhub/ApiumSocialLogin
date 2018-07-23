@@ -21,16 +21,10 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '9.0'
     s.static_framework = true
-    s.source_files = 'Classes/**/*.{h,m,swift}' , 'Classes/Wechat/SDKExport/*.h'
+    s.source_files = 'Classes/**/*.{h,m,swift}'
     s.dependency  'FacebookLogin'
     s.dependency  'GoogleSignIn'
-    #s.dependency  'WechatKit'
-    
-    s.public_header_files = 'Classes/Wechat/SDKExport/*.h'
-    s.vendored_libraries  = 'Classes/Wechat/SDKExport/libWeChatSDK.a'
-      
-    s.frameworks = 'SystemConfiguration', 'Security', 'CoreTelephony', 'CFNetwork', 'UIKit'
-    s.libraries = 'z', 'c++', 'sqlite3.0'
-    s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
+    s.dependency 'ApiumWechatKit'
 
 end
+<

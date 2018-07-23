@@ -19,33 +19,16 @@
     "ios": "9.0"
   },
   "static_framework": true,
-  "source_files": [
-    "Classes/**/*.{h,m,swift}",
-    "Classes/Wechat/SDKExport/*.h"
-  ],
+  "source_files": "Classes/**/*.{h,m,swift}",
   "dependencies": {
     "FacebookLogin": [
 
     ],
     "GoogleSignIn": [
 
+    ],
+    "ApiumWechatKit": [
+
     ]
-  },
-  "public_header_files": "Classes/Wechat/SDKExport/*.h",
-  "vendored_libraries": "Classes/Wechat/SDKExport/libWeChatSDK.a",
-  "frameworks": [
-    "SystemConfiguration",
-    "Security",
-    "CoreTelephony",
-    "CFNetwork",
-    "UIKit"
-  ],
-  "libraries": [
-    "z",
-    "c++",
-    "sqlite3.0"
-  ],
-  "xcconfig": {
-    "OTHER_LDFLAGS": "-ObjC -all_load"
   }
 }

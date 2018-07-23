@@ -20,6 +20,10 @@ public class SocialNetworkfConfigurationFactory {
         return GoogleConfiguration(clientId: clientId, scopes: scopes)
     }
     
+    public static func createWeChatConfiguration(appId: String, appSecret: String) -> WeChatConfiguration {
+        return WeChatConfiguration(appId: appId, appSecret: appSecret)
+    }
+    
     public static func map(_ permissions: [Permissions]) -> Set<String> {
         return Set(permissions.map {$0.toFacebookPermission()}.flatMap{$0})
     }
