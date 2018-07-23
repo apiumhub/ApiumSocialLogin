@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ApiumSocialLogin'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = 'ApiumSocialLogin is a helper api to authenticate users using Social Networks like Facebook and Google.'
     s.description      = <<-DESC
     ApiumSocialLogin (s.version) is a helper api to authenticate users using Social Networks like Facebook and Google.
