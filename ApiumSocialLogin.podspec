@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ApiumSocialLogin'
-    s.version          = '0.1.2'
+    s.version          = '0.2'
     s.summary          = 'ApiumSocialLogin is a helper api to authenticate users using Social Networks like Facebook and Google.'
     s.description      = <<-DESC
     ApiumSocialLogin (s.version) is a helper api to authenticate users using Social Networks like Facebook and Google.
@@ -24,7 +24,5 @@ Pod::Spec.new do |s|
     s.source_files = 'Classes/**/*.{h,m,swift}'
     s.dependency  'FacebookLogin'
     s.dependency  'GoogleSignIn'
-    s.dependency 'ApiumWechatKit'
-
 end
 

@@ -50,22 +50,6 @@ class ViewController: UIViewController {
         googleSocialAuthentication.login(configuration: googleConfig)
         
     }
-    
-    var apiumWechatSocialAuthentication: WeChatSocialAuthentication!
-    
-    @IBAction func weChatButtonPressed(_ sender: Any) {
-        let wechatConfig = SocialNetworkfConfigurationFactory.createWeChatConfiguration(appId: "wx8c5f7712f1c96e92", appSecret: "")
-        
-        let successClosure = { (userData) in
-            print(userData)
-        }
-        
-        let errorClosure = { (error) in
-            print(error)
-        }
-        
-        apiumWechatSocialAuthentication = WeChatSocialAuthentication(vc: self, onSuccess: successClosure, onError: errorClosure)
-        apiumWechatSocialAuthentication.login(configuration: wechatConfig)
-    }
+
 }
 
