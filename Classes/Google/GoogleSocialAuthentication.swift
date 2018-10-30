@@ -59,7 +59,7 @@ extension GoogleSocialAuthentication: GIDSignInUIDelegate, GIDSignInDelegate {
                     return
             }
             
-            self.onSuccess(UserAuthenticationResponseData(userId: userID, token: token, email: currentUser.profile.email))
+            self.onSuccess(GoogleUserAuthenticationResponseData(userId: userID, token: token, email: currentUser.profile.email,idToken: currentUser.authentication.idToken))
         }
     }
     

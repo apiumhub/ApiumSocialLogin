@@ -15,10 +15,23 @@ public protocol SocialAuthenticationProtocol {
     func logout() -> Void
 }
 
-public struct UserAuthenticationResponseData {
+public protocol UserAuthenticationResponseInterface {
+    var userId: String { get }
+    var token: String { get }
+    var email: String { get }
+}
+
+public struct UserAuthenticationResponseData: UserAuthenticationResponseInterface {
     public let userId: String
     public let token: String
     public let email: String
+}
+
+public struct GoogleUserAuthenticationResponseData: UserAuthenticationResponseInterface {
+    public let userId: String
+    public let token: String
+    public let email: String
+    public let idToken: String
 }
 
 public enum SocialAuthenticationError: Int, CustomStringConvertible {
