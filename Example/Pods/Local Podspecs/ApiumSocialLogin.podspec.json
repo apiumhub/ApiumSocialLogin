@@ -1,6 +1,6 @@
 {
   "name": "ApiumSocialLogin",
-  "version": "0.1.2",
+  "version": "0.2",
   "summary": "ApiumSocialLogin is a helper api to authenticate users using Social Networks like Facebook and Google.",
   "description": "ApiumSocialLogin (s.version) is a helper api to authenticate users using Social Networks like Facebook and Google.",
   "homepage": "https://github.com/apiumhub/ApiumSocialLogin",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:apiumhub/ApiumSocialLogin.git",
-    "tag": "0.1.2"
+    "tag": "0.2"
   },
   "platforms": {
     "ios": "9.0"
