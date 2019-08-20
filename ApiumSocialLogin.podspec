@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.static_framework = true
     s.source_files = 'Classes/**/*.{h,m,swift}'
-    s.dependency  'FacebookLogin'
-    s.dependency  'GoogleSignIn'
+    s.dependency  'FacebookLogin', '~> 0.5.0'
+    s.dependency  'GoogleSignIn', '~> 4.3.0'
 end
 
